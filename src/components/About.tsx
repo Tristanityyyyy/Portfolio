@@ -7,7 +7,7 @@ export default function About() {
 
         {/* Left: About Text */}
         <div className="flex-1">
-          <h2 className="text-base text-lg font-bold text-zinc-900 mb-4">About</h2>
+          <h2 className="text-lg font-bold text-zinc-900 mb-4">About</h2>
 
           <div className="flex flex-col gap-4 text-md font-normal text-zinc-900 leading-relaxed">
             <p>

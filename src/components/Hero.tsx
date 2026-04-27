@@ -6,11 +6,11 @@ export default function Hero() {
   return (
     <section className="w-full">
       {/* Profile Row */}
-      <div className="flex items-start gap-8">
+      <div className="flex flex-col sm:flex-row items-start gap-6">
  
         {/* Avatar */}
         <div className="relative shrink-0">
-          <div className="w-50 h-50 rounded-2xl overflow-hidden shadow-sm">
+          <div className="w-32 h-32 sm:w-50 sm:h-50 rounded-2xl overflow-hidden shadow-sm">
             {/* Replace src with your actual photo in /public/profile.png */}
             <img
               src="/profile-tristan.png"
@@ -25,7 +25,7 @@ export default function Hero() {
         </div>
  
         {/* Info */}
-        <div className="flex flex-col mt-10 gap-1.5 flex-1 min-w-0">
+        <div className="flex flex-col sm:mt-10 gap-1.5 flex-1 min-w-0">
           {/* Name */}
           <h1 className="text-3xl font-bold text-zinc-900 tracking-tight leading-none">
             Tristan Labjata

@@ -4,12 +4,15 @@
 import { useRef, useState } from "react";
 
 const images = [
-  { src: "/photo1.jpg", alt: "Event photo 1" },
-  { src: "/photo2.jpg", alt: "Event photo 2" },
+  { src: "/photo6.jpg", alt: "Event photo 1" },
+  { src: "/photo7.jpg", alt: "Event photo 2" },
   { src: "/photo3.jpg", alt: "Event photo 3" },
   { src: "/photo4.jpg", alt: "Event photo 4" },
   { src: "/photo5.jpg", alt: "Event photo 5" },
-  { src: "/photo6.jpg", alt: "Event photo 6" },
+  { src: "/photo8.jpg", alt: "Event photo 6" },
+  { src: "/photo2.jpg", alt: "Event photo 6" },
+  { src: "/photo9.jpg", alt: "Event photo 6" },
+  { src: "/photo10.jpg", alt: "Event photo 6" }
 ];
 
 export default function Gallery() {
