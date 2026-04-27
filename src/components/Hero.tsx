@@ -15,7 +15,7 @@ export default function Hero() {
  
         {/* Avatar */}
         <div className="relative shrink-0">
-          <div className="w-16 h-16 sm:w-24 sm:h-24 rounded-xl sm:rounded-2xl overflow-hidden shadow-sm">
+          <div className="w-24 h-24 sm:w-50 sm:h-50 rounded-xl sm:rounded-2xl overflow-hidden shadow-sm">
             {/* Replace src with your actual photo in /public/profile.png */}
             <img
               src="/profile-tristan.png"
@@ -33,7 +33,7 @@ export default function Hero() {
         <div className="flex flex-col sm:mt-2 gap-1 flex-1 min-w-0">
           {/* Name + Dark mode toggle */}
           <div className="flex items-center justify-between">
-            <h1 className="text-xl sm:text-3xl font-bold text-zinc-900 dark:text-white tracking-tight leading-none">
+            <h1 className="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white tracking-tight leading-none">
               Tristan Labjata
             </h1>
             {mounted && (
@@ -65,12 +65,12 @@ export default function Hero() {
  
           {/* Location */}
           <div className="flex items-center gap-1 text-xs sm:text-sm text-zinc-600 dark:text-zinc-400">
-            <MapPin size={13} />
+            <MapPin size={11} />
             <span>Quezon City, Philippines</span>
           </div>
  
           {/* Role */}
-          <p className="text-sm sm:text-lg font-normal text-zinc-700 dark:text-zinc-300">
+          <p className="text-sm sm:text-base font-normal text-zinc-700 dark:text-zinc-300">
             Backend Developer \ Full-stack Developer \ UI \ UX
           </p>
  
