@@ -11,11 +11,11 @@ export default function Hero() {
   return (
     <section className="w-full">
       {/* Profile Row */}
-      <div className="flex flex-col sm:flex-row items-start gap-6">
+      <div className="flex flex-row items-start gap-4">
  
         {/* Avatar */}
         <div className="relative shrink-0">
-          <div className="w-32 h-32 sm:w-50 sm:h-50 rounded-2xl overflow-hidden shadow-sm">
+          <div className="w-16 h-16 sm:w-24 sm:h-24 rounded-xl sm:rounded-2xl overflow-hidden shadow-sm">
             {/* Replace src with your actual photo in /public/profile.png */}
             <img
               src="/profile-tristan.png"
@@ -30,10 +30,10 @@ export default function Hero() {
         </div>
  
         {/* Info */}
-        <div className="flex flex-col sm:mt-10 gap-1.5 flex-1 min-w-0">
+        <div className="flex flex-col sm:mt-2 gap-1 flex-1 min-w-0">
           {/* Name + Dark mode toggle */}
           <div className="flex items-center justify-between">
-            <h1 className="text-3xl font-bold text-zinc-900 dark:text-white tracking-tight leading-none">
+            <h1 className="text-xl sm:text-3xl font-bold text-zinc-900 dark:text-white tracking-tight leading-none">
               Tristan Labjata
             </h1>
             {mounted && (
@@ -64,13 +64,13 @@ export default function Hero() {
           </div>
  
           {/* Location */}
-          <div className="flex items-center gap-1 text-sm text-zinc-600 dark:text-zinc-400">
+          <div className="flex items-center gap-1 text-xs sm:text-sm text-zinc-600 dark:text-zinc-400">
             <MapPin size={13} />
             <span>Quezon City, Philippines</span>
           </div>
  
           {/* Role */}
-          <p className="text-lg font-normal text-zinc-700 dark:text-zinc-300">
+          <p className="text-sm sm:text-lg font-normal text-zinc-700 dark:text-zinc-300">
             Backend Developer \ Full-stack Developer \ UI \ UX
           </p>
  
@@ -79,8 +79,8 @@ export default function Hero() {
             {/* Email button — filled */}
             <a
               href="mailto:labjatatristan@gmail.com"
-              className="flex items-center gap-1.5 px-4 py-1.5 rounded-lg
-                bg-zinc-900 text-white text-md font-semibold
+              className="flex items-center gap-1.5 px-3 py-1 sm:px-4 sm:py-1.5 rounded-lg
+                bg-zinc-900 text-white text-xs sm:text-sm font-semibold
                 hover:bg-zinc-700 hover:-translate-y-0.5 transition-all duration-150
                 shadow-sm"
             >
@@ -93,10 +93,10 @@ export default function Hero() {
               href="https://github.com/Tristanityyyyy"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 px-4 py-1.5 rounded-lg
-                border border-zinc-200 text-zinc-700 text-md font-semibold
+              className="flex items-center gap-1.5 px-3 py-1 sm:px-4 sm:py-1.5 rounded-lg
+                border border-zinc-200 text-zinc-700 text-xs sm:text-sm font-semibold
                 hover:border-zinc-400 hover:text-zinc-900 hover:-translate-y-0.5
-                transition-all duration-150 bg-white shadow-sm"
+                transition-all duration-150 bg-white dark:bg-zinc-900 dark:text-zinc-300 dark:border-zinc-700 shadow-sm"
             >
               {/* GitHub SVG */}
               <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor">
