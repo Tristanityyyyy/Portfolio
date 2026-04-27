@@ -7,9 +7,9 @@ export default function About() {
 
         {/* Left: About Text */}
         <div className="flex-1">
-          <h2 className="text-lg font-bold text-zinc-900 mb-4">About</h2>
+          <h2 className="text-lg font-bold text-zinc-900 dark:text-zinc-100 mb-4">About</h2>
 
-          <div className="flex flex-col gap-4 text-md font-normal text-zinc-900 leading-relaxed">
+          <div className="flex flex-col gap-4 text-md font-normal text-zinc-900 dark:text-zinc-300 leading-relaxed">
             <p>
              I'm a backend developer specializing in C# and .NET, building scalable APIs, 
              authentication systems, and cloud-ready server-side solutions. 

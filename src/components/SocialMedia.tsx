@@ -39,7 +39,7 @@ export default function ContactCard() {
 
   return (
     <div className="flex flex-col gap-4">
-      <h2 className="text-lg font-bold text-zinc-900">Contact</h2>
+      <h2 className="text-lg font-bold text-zinc-900 dark:text-zinc-100">Contact</h2>
 
         {/* Contact list */}
         <div className="flex-1 flex flex-col pl-2">
@@ -49,16 +49,16 @@ export default function ContactCard() {
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-between gap-4 group"
+              className="flex items-center justify-between gap-4 group hover:-translate-y-0.5 transition-transform duration-150"
               style={{ height: ROW_HEIGHT, paddingTop: index === 0 ? PADDING_TOP - 8 : 0 }}
             >
               <div className="flex items-center gap-2">
-                <span className="text-zinc-400 group-hover:text-zinc-700 transition-colors">
+                <span className="text-zinc-400 group-hover:text-zinc-200 dark:group-hover:text-zinc-300 transition-colors">
                   {item.icon}
                 </span>
-                <span className="text-sm font-semibold text-zinc-900">{item.label}</span>
+                <span className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">{item.label}</span>
               </div>
-              <span className="text-xs text-zinc-400 group-hover:text-zinc-600 transition-colors shrink-0">
+              <span className="text-xs text-zinc-400 dark:text-zinc-500 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors shrink-0">
                 {item.value}
               </span>
             </a>

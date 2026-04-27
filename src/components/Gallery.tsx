@@ -30,7 +30,7 @@ export default function Gallery() {
 
   return (
     <div className="flex flex-col gap-4">
-      <h2 className="text-lg font-bold text-zinc-900">Gallery</h2>
+      <h2 className="text-lg font-bold text-zinc-900 dark:text-zinc-100">Gallery</h2>
 
       <div className="relative group min-w-0">
         {/* Left button */}
@@ -38,8 +38,8 @@ export default function Gallery() {
           onClick={() => scroll("left")}
           className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3 z-10
             w-8 h-8 flex items-center justify-center
-            bg-white border border-zinc-200 rounded-full shadow-sm
-            text-zinc-500 hover:text-zinc-900 hover:border-zinc-400
+            bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-full shadow-sm
+            text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:border-zinc-400
             opacity-0 group-hover:opacity-100 transition-all duration-200"
         >
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -80,8 +80,8 @@ export default function Gallery() {
           onClick={() => scroll("right")}
           className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-3 z-10
             w-8 h-8 flex items-center justify-center
-            bg-white border border-zinc-200 rounded-full shadow-sm
-            text-zinc-500 hover:text-zinc-900 hover:border-zinc-400
+            bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-full shadow-sm
+            text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:border-zinc-400
             opacity-0 group-hover:opacity-100 transition-all duration-200"
         >
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none">

@@ -8,7 +8,7 @@ import Gallery from "@/components/Gallery";
 import { Socket } from "dgram";
 export default function Home() {
   return (
-  <main className="w-full max-w-4xl mx-auto flex flex-col gap-4 py-6 px-4">
+  <main className="w-full max-w-4xl mx-auto flex flex-col gap-4 py-6 px-4 bg-white dark:bg-zinc-950 min-h-screen">
       <Hero />
       <div className="flex flex-col md:flex-row gap-4">
         <div className="flex-1">
@@ -18,18 +18,18 @@ export default function Home() {
           <ExperienceCard />
         </div>
       </div>
-      <div className="border-t border-zinc-200" />
+      <div className="border-t border-zinc-200 dark:border-zinc-800" />
       <ProjectCard />
-      <div className="border-t border-zinc-200" /> 
+      <div className="border-t border-zinc-200 dark:border-zinc-800" />
       <div className="flex flex-col md:flex-row gap-4">
         <div className="flex-1">
           <TechStack />
         </div>
-        <div className="w-full md:w-72 shrink-0"> 
+        <div className="w-full md:w-72 shrink-0">
           <SocialMedia />
         </div>
       </div>
-      <div className="border-t border-zinc-200" /> 
+      <div className="border-t border-zinc-200 dark:border-zinc-800" />
       <Gallery />
 
     </main>
