@@ -20,14 +20,16 @@ export default function Home() {
       </div>
       <div className="border-t border-zinc-200" />
       <ProjectCard />
+      <div className="border-t border-zinc-200" /> 
       <div className="flex flex-col md:flex-row gap-4">
         <div className="flex-1">
           <TechStack />
         </div>
-        <div className="w-full md:w-72 shrink-0">
+        <div className="w-full md:w-72 shrink-0"> 
           <SocialMedia />
         </div>
       </div>
+      <div className="border-t border-zinc-200" /> 
       <Gallery />
 
     </main>

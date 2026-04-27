@@ -11,21 +11,19 @@ export default function About() {
 
           <div className="flex flex-col gap-4 text-md font-normal text-zinc-900 leading-relaxed">
             <p>
-              I'm a backend developer specializing in building scalable and
-              efficient server-side solutions. I work on projects including
-              REST APIs, database design, authentication systems, and
-              cloud infrastructure.
+             I'm a backend developer specializing in C# and .NET, building scalable APIs, 
+             authentication systems, and cloud-ready server-side solutions. 
+             I focus on clean architecture, performance, and writing code that teams can actually maintain.
             </p>
             <p>
-              I've helped teams deliver reliable backend systems that power
-              modern web and mobile applications, focusing on clean
-              architecture and performance.
+              Beyond backend, I'm comfortable working across the full stack — from designing databases 
+              and REST APIs to building responsive frontends with React and Next.js. 
+              I enjoy owning features end-to-end when the project calls for it.
             </p>
             <p>
-              Lately, I've been diving deeper into integrating AI tools into
-              backend workflows, building intelligent APIs and automation
-              systems that streamline development and deliver smarter
-              solutions.
+              Lately, I've been integrating AI tooling into backend 
+              workflows, building intelligent APIs and automation 
+              systems that speed up development and deliver smarter, more efficient solutions.
             </p>
           </div>
         </div>

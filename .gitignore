@@ -43,3 +43,20 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+# System & personal files
+.bash_history
+.emulator_console_auth_token
+.gitconfig
+active-user-state.json
+lspLog.log
+mcp-state.json
+
+# AWS
+.aws/
+
+# VS Code
+.vscode/
+
+# Chat history
+chat-history-*
+00ad7222375f8421f194271ec034b3d*

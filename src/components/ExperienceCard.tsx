@@ -7,8 +7,8 @@ interface Experience {
 }
 
 const experiences: Experience[] = [
-  { role: "Full-Stack Developer", company: "Odecci Solutions Inc.", year: "2026" },
-  { role: "Backend Developer", company: "Odecci Solutions Inc.", year: "2026" },
+  { role: "Full-Stack Developer (Intern)", company: "Odecci Solutions Inc.", year: "2026" },
+  { role: "Backend Developer (Intern)", company: "Odecci Solutions Inc.", year: "2026" },
   { role: "Backend Developer", company: "Capstone Project", year: "2025" },
   { role: "BS Information Technology", company: "STI College Balagtas", year: "2022" },
 ];
