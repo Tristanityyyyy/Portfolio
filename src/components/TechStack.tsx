@@ -2,7 +2,7 @@
 import Card from "@/components/ui/Card";
 
 const techStack = {
-  Frontend: ["JavaScript", "React", "Next.js", "Blazor", "Tailwind CSS"],
+  Frontend: ["JavaScript", "React", "Next.js", "HTML", "CSS", "Tailwind CSS"],
   Backend: ["Node.js", "PHP", ".NET", "MySQL", "C#", "Postman"],
   "Version Control": ["Git", "GitHub"],
 };
