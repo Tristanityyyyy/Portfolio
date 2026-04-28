@@ -8,9 +8,9 @@ interface Project {
 }
 
 const projects: Project[] = [
-  { title: "Task Management App", description: "A simple task management application built with React and Node.js", url: "192.168.1.25/" },
+  { title: "Task Management App", description: "A simple task management application built with React and Node.js", url: "http://ec2-52-77-117-213.ap-southeast-1.compute.amazonaws.com:1014/" },
   { title: "AOPC Content Management System", description: "A content management system for the AOPC organization", url: "project-two.com" },
-  { title: "Teacher's Report Management System", description: "A system for managing and generating teacher reports", url: "project-three.com" },
+  { title: "Teacher's Report Management System", description: "A system for managing and generating teacher reports", url: "terms.kiri8tives.com/" },
   { title: "Web Scraper Extension", description: "A web scraper built with next.js", url: "project-four.com" }
 ];
 
@@ -31,7 +31,7 @@ export default function ProjectCard() {
         {projects.map((project) => (
             <a
             key={project.title}
-            href={`https://${project.url}`}
+            href={project.url.startsWith('http') ? project.url : `https://${project.url}`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col gap-1.5 p-4 
