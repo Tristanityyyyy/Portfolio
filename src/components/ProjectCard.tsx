@@ -1,4 +1,5 @@
 // src/components/ProjectCard.tsx
+import Card from "@/components/ui/Card";
 
 interface Project {
   title: string;
@@ -15,7 +16,7 @@ const projects: Project[] = [
 
 export default function ProjectCard() {
   return (
-    <div className="flex flex-col gap-4">
+    <Card className="p-5">
 
       {/* Header */}
       <div className="flex items-center justify-between">
@@ -33,9 +34,9 @@ export default function ProjectCard() {
             href={`https://${project.url}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col gap-1.5 p-4 rounded-xl
-              border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900
-              hover:border-zinc-400 dark:hover:border-zinc-600 hover:shadow-sm hover:-translate-y-0.5
+            className="flex flex-col gap-1.5 p-4 
+              border-b border-zinc-200 dark:border-b-zinc-950 bg-white dark:bg-zinc-950 
+              hover:shadow-sm hover:-translate-y-0.5
               transition-all duration-150"
           >
             <span className="text-sm font-bold text-zinc-900 dark:text-zinc-100">{project.title}</span>
@@ -48,6 +49,6 @@ export default function ProjectCard() {
         ))}
       </div>
 
-    </div>
+    </Card>
   );
 }

@@ -1,18 +1,24 @@
 // src/components/Gallery.tsx
 "use client";
-
 import { useRef, useState } from "react";
+import Card from "@/components/ui/Card";
 
 const images = [
-  { src: "/photo6.jpg", alt: "Event photo 1" },
-  { src: "/photo7.jpg", alt: "Event photo 2" },
-  { src: "/photo3.jpg", alt: "Event photo 3" },
-  { src: "/photo4.jpg", alt: "Event photo 4" },
-  { src: "/photo5.jpg", alt: "Event photo 5" },
-  { src: "/photo8.jpg", alt: "Event photo 6" },
-  { src: "/photo2.jpg", alt: "Event photo 6" },
-  { src: "/photo9.jpg", alt: "Event photo 6" },
-  { src: "/photo10.jpg", alt: "Event photo 6" }
+  
+  { src: "photos/banda.jpg", alt: "Event photo 6" },
+  { src: "photos/photo4.jpg", alt: "Event photo 4" },
+  { src: "photos/awardbanda2.jpg", alt: "Event photo 6" },
+  { src: "photos/awardbanda.jpg", alt: "Event photo 1" },
+  { src: "photos/photo7.jpg", alt: "Event photo 2" },
+  { src: "photos/photo5.jpg", alt: "Event photo 4" },
+  { src: "photos/photo3.jpg", alt: "Event photo 4" },
+  { src: "photos/capstone.jpg", alt: "Event photo 6" }, 
+  { src: "photos/tabletennis.jpg", alt: "Event photo 6" }, 
+  { src: "photos/capstone2.jpg", alt: "Event photo 6" },
+  { src: "photos/photo8.jpg", alt: "Event photo 6" },
+  { src: "photos/drums.jpg", alt: "Event photo 6" },
+  { src: "photos/panthera.jpg", alt: "Event photo 6" },
+  { src: "photos/tabletennis2.jpg", alt: "Event photo 6" }
 ];
 
 export default function Gallery() {
@@ -29,7 +35,7 @@ export default function Gallery() {
   };
 
   return (
-    <div className="flex flex-col gap-4">
+    <Card className="p-5">
       <h2 className="text-lg font-bold text-zinc-900 dark:text-zinc-100">Gallery</h2>
 
       <div className="relative group min-w-0">
@@ -59,17 +65,13 @@ export default function Gallery() {
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
               className="shrink-0 overflow-hidden cursor-pointer"
-              style={{
-                width: 220,
-                height: 220,
-                transform: hoveredIndex === index ? "translateY(-6px)" : "translateY(0)",
-                transition: "transform 0.25s ease",
-              }}
+              style={{ width: 220, height: 220 }}
             >
               <img
                 src={img.src}
                 alt={img.alt}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover block transition-transform duration-300 ease-out"
+                style={{ transform: hoveredIndex === index ? "scale(1.07)" : "scale(1)" }}
               />
             </div>
           ))}
@@ -89,6 +91,6 @@ export default function Gallery() {
           </svg>
         </button>
       </div>
-    </div>
+    </Card>
   );
 }

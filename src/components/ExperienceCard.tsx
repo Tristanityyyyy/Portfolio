@@ -1,6 +1,7 @@
 // src/components/ExperienceCard.tsx
 "use client";
 import { useState } from "react";
+import Card from "@/components/ui/Card";
 
 interface Experience {
   role: string;
@@ -24,7 +25,7 @@ export default function ExperienceCard() {
   const svgHeight = PADDING_TOP + (experiences.length - 1) * ROW_HEIGHT + PADDING_TOP;
 
   return (
-    <div className="flex flex-col gap-4">
+    <Card className="p-5 h-full">
       <h2 className="text-lg font-bold text-zinc-900 dark:text-zinc-100">Experience</h2>
 
       <div className="flex gap-0">
@@ -86,6 +87,6 @@ export default function ExperienceCard() {
           ))}
         </div>
       </div>
-    </div>
+    </Card>
   );
 }

@@ -1,8 +1,8 @@
-
 "use client";
 import { Mail, MapPin } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import Card from "@/components/ui/Card";
 
 export default function Hero() {
   const { theme, setTheme } = useTheme();
@@ -10,16 +10,16 @@ export default function Hero() {
   useEffect(() => setMounted(true), []);
 
   return (
-    <section className="w-full">
+    <Card className="p-5">
       <div className="flex flex-row items-start gap-4 sm:gap-8">
 
         {/* Avatar */}
         <div className="relative shrink-0">
-          <div className="w-20 h-20 sm:w-50 sm:h-50 rounded-xl sm:rounded-2xl overflow-hidden shadow-sm">
+          <div className="w-20 h-20 sm:w-50 sm:h-50 overflow-hidden shadow-sm">
             <img
-              src="/profile-tristan.png"
+              src="photos/profile-tristan.png"
               alt="Tristan Labjata"
-              className="w-full h-full object-cover object-top"
+              className="w-full h-full object-cover object-top block"
             />
           </div>
           <span className="absolute -bottom-1 -right-1 w-3 h-3 sm:w-3.5 sm:h-3.5 rounded-full bg-emerald-400 border-2 border-white" />
@@ -104,6 +104,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </section>
+    </Card>
   );
 }

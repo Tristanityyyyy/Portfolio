@@ -1,15 +1,16 @@
 // src/components/About.tsx
+import Card from "@/components/ui/Card";
 
 export default function About() {
   return (
-    <section className="w-full max-w-4xl mx-auto ">
+    <Card className="p-5 h-full">
       <div className="flex gap-8">
 
         {/* Left: About Text */}
         <div className="flex-1">
           <h2 className="text-lg font-bold text-zinc-900 dark:text-zinc-100 mb-4">About</h2>
 
-          <div className="flex flex-col gap-4 text-md font-normal text-zinc-900 dark:text-zinc-300 leading-relaxed">
+          <div className="flex text-justify flex-col gap-4 text-md font-normal text-zinc-900 dark:text-zinc-300 leading-relaxed">
             <p>
              I'm a backend developer specializing in C# and .NET, building scalable APIs, 
              authentication systems, and cloud-ready server-side solutions. 
@@ -32,7 +33,6 @@ export default function About() {
 
       </div>
 
-    
-    </section>
+    </Card>
   );
 }

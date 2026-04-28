@@ -1,4 +1,5 @@
 // src/components/TechStack.tsx
+import Card from "@/components/ui/Card";
 
 const techStack = {
   Frontend: ["JavaScript", "React", "Next.js", "Blazor", "Tailwind CSS"],
@@ -8,7 +9,7 @@ const techStack = {
 
 export default function TechStack() {
   return (
-    <div className="flex flex-col gap-5">
+    <Card className="p-5 h-full">
       {/* Header */}
       <div className="flex items-center justify-between">
         <h2 className="text-lg font-bold text-zinc-900 dark:text-zinc-100">Tech Stack</h2>
@@ -21,7 +22,7 @@ export default function TechStack() {
       </div>
 
       {/* Categories */}
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 mt-4">
         {Object.entries(techStack).map(([category, skills]) => (
           <div key={category} className="flex flex-col gap-2">
             <span className="text-sm font-semibold text-zinc-900 dark:text-zinc-200">{category}</span>
@@ -38,6 +39,6 @@ export default function TechStack() {
           </div>
         ))}
       </div>
-    </div>
+    </Card>
   );
 }
