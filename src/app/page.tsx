@@ -7,7 +7,7 @@ import SocialMedia from "@/components/SocialMedia";
 import Gallery from "../components/Gallery";
 import CertCard from "@/components/CertCard";
 import FadeIn from "@/components/FadeIn";
-
+import Chatbot from "@/components/Chatbot";
 export default function Home() {
   return (
     <FadeIn>
@@ -25,6 +25,7 @@ export default function Home() {
         <div className="flex-1"><TechStack /></div>
         <div className="w-full md:w-72 shrink-0"><SocialMedia /></div>
       </div>
+
       <Gallery />
       </main>
       </FadeIn>
