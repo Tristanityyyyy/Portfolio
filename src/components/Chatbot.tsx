@@ -123,12 +123,12 @@ export default function Chatbot() {
       {/* Floating Button */}
       <button
         onClick={() => setOpen(!open)}
-        className="fixed bottom-6 right-6 flex items-center gap-2 
-          px-4 py-3 bg-zinc-900 text-white rounded-full
+        className="fixed bottom-6 right-6 flex items-center justify-center gap-2 
+          p-3 sm:px-4 sm:py-3 bg-zinc-900 text-white rounded-full
           shadow-lg hover:bg-zinc-700 transition-all duration-200 z-50"
       >
         <MessageCircle size={16} />
-        <span className="text-sm font-medium">Chat with Tristan</span>
+        <span className="hidden sm:inline text-sm font-medium">Chat with Tristan</span>
       </button>
     </>
   );
