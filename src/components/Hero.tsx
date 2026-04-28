@@ -15,7 +15,7 @@ export default function Hero() {
 
         {/* Avatar */}
         <div className="relative shrink-0">
-          <div className="w-20 h-20 sm:w-50 sm:h-50 overflow-hidden shadow-sm">
+          <div className="rounded-lg w-20 h-20 sm:w-50 sm:h-50 overflow-hidden shadow-sm">
             <img
               src="photos/profile-tristan.png"
               alt="Tristan Labjata"
