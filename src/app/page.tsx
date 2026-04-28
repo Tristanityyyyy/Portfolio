@@ -5,33 +5,36 @@ import ProjectCard from "@/components/ProjectCard";
 import TechStack from "@/components/TechStack";
 import SocialMedia from "@/components/SocialMedia";
 import Gallery from "@/components/Gallery";
-import { Socket } from "dgram";
+import Card from "@/components/ui/Card";
+
 export default function Home() {
   return (
-  <main className="w-full max-w-4xl mx-auto flex flex-col gap-4 py-6 px-4 bg-white dark:bg-zinc-950 min-h-screen">
-      <Hero />
+    <main className="w-full max-w-4xl mx-auto flex flex-col gap-4 py-6 px-4 bg-white dark:bg-zinc-950 min-h-screen">
+      <Card>
+        <Hero />
+      </Card>
       <div className="flex flex-col md:flex-row gap-4">
-        <div className="flex-1">
-           <About />
-        </div>
-        <div className="w-full md:w-72 shrink-0">
+        <Card className="flex-1">
+          <About />
+        </Card>
+        <Card className="w-full md:w-72 shrink-0">
           <ExperienceCard />
-        </div>
+        </Card>
       </div>
-      <div className="border-t border-zinc-200 dark:border-zinc-800" />
-      <ProjectCard />
-      <div className="border-t border-zinc-200 dark:border-zinc-800" />
+      <Card>
+        <ProjectCard />
+      </Card>
       <div className="flex flex-col md:flex-row gap-4">
-        <div className="flex-1">
+        <Card className="flex-1">
           <TechStack />
-        </div>
-        <div className="w-full md:w-72 shrink-0">
+        </Card>
+        <Card className="w-full md:w-72 shrink-0">
           <SocialMedia />
-        </div>
+        </Card>
       </div>
-      <div className="border-t border-zinc-200 dark:border-zinc-800" />
-      <Gallery />
-
+      <Card>
+        <Gallery />
+      </Card>
     </main>
   );
 }
