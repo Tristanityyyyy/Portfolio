@@ -25,7 +25,7 @@ export default function CertCard() {
             href={cert.pdf}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-between gap-2 p-3 bg-zinc-100 dark:bg-zinc-950 group cursor-pointer hover:bg-zinc-200 dark:hover:bg-zinc-950 transition-colors rounded-none"
+            className="flex items-center justify-between gap-2 p-3 bg-zinc-100 dark:bg-transparent group cursor-pointer hover:bg-zinc-200 dark:hover:bg-zinc-950 transition-colors rounded-none"
           >
             <div className="flex flex-col gap-0.5 min-w-0">
               <span className="text-sm font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors">

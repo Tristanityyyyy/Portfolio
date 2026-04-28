@@ -22,7 +22,7 @@ export default function ContactCard() {
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-between gap-4 group py-2 border-b border-zinc-100 dark:border-zinc-800 hover:-translate-y-0.5 transition-transform duration-150"
+              className="flex items-center justify-between gap-4 group py-2 border-b border-zinc-100 dark:border-transparent hover:-translate-y-0.5 transition-transform duration-150"
             >
               <div className="flex items-center gap-2">
                 <span className="text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors">
