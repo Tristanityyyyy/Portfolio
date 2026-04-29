@@ -64,7 +64,7 @@ export default function Gallery() {
               key={index}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
-              className="shrink-0 overflow-hidden rounded-lg cursor-pointer"
+              className="shrink-0 overflow-hidden rounded-sm cursor-pointer"
               style={{ width: 220, height: 220 }}
             >
               <img

@@ -9,8 +9,8 @@ export default function FadeIn({ children }: { children: React.ReactNode }) {
     <div
       style={{
         opacity: visible ? 1 : 0,
-        transform: visible ? "translateY(0)" : "translateY(12px)",
-        transition: "opacity 0.6s ease, transform 0.6s ease",
+        transform: visible ? "translateX(0)" : "translateX(-60px)",
+        transition: "opacity 0.8s ease, transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
       }}
     >
       {children}

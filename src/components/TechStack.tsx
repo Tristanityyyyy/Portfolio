@@ -27,7 +27,7 @@ export default function TechStack() {
               {skills.map((skill) => (
                 <span
                   key={skill}
-                  className="px-3 py-1 text-sm text-zinc-900 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 rounded-full hover:border-zinc-400 dark:hover:border-zinc-500 transition-colors cursor-default"
+                  className="px-3 py-1 text-sm text-zinc-900 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 rounded-full hover:border-zinc-400 dark:hover:border-zinc-500 hover:-translate-y-0.5 transition-colors cursor-default"
                 >
                   {skill}
                 </span>

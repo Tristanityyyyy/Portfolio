@@ -27,6 +27,10 @@ export default function Home() {
       </div>
 
       <Gallery />
+      <div className="border-t border-zinc-200 dark:border-zinc-800" />
+        <p className="text-md text-center text-zinc-400 dark:text-zinc-600 pb-4">
+          © 2025 Tristan Labjata. All rights reserved.
+        </p>
       </main>
       </FadeIn>
   );

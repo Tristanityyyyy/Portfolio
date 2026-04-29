@@ -9,9 +9,9 @@ interface Project {
 
 const projects: Project[] = [
   { title: "Task Management App", description: "A simple task management application built with React and Node.js", url: "http://ec2-52-77-117-213.ap-southeast-1.compute.amazonaws.com:1014/" },
-  { title: "AOPC Content Management System", description: "A content management system for the AOPC organization", url: "project-two.com" },
+  { title: "AOPC Content Management System", description: "A content management system for the AOPC organization", url: "github.com/Tristanityyyyy/AOPC" },
   { title: "Teacher's Report Management System", description: "A system for managing and generating teacher reports", url: "terms.kiri8tives.com/" },
-  { title: "Web Scraper Extension", description: "A web scraper built with next.js", url: "project-four.com" }
+  { title: "Web Scraper Extension", description: "A web scraper built with next.js", url: "github.com/Tristanityyyyy/WebScraper" }
 ];
 
 export default function ProjectCard() {
@@ -42,7 +42,7 @@ export default function ProjectCard() {
             <span className="text-sm font-bold text-zinc-900 dark:text-zinc-100">{project.title}</span>
             <span className="text-xs text-zinc-500 dark:text-zinc-400">{project.description}</span>
             <span className="text-[11px] font-mono text-zinc-400 dark:text-zinc-500 bg-zinc-100 dark:bg-zinc-800
-              px-2 py-0.5 rounded-md w-fit mt-1">
+              px-2 py-0.5 rounded-md w-fit mt-1 max-w-full truncate">
               {project.url}
             </span>
           </a>
