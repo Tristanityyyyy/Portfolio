@@ -11,18 +11,17 @@ export default function Hero() {
 
   return (
     <Card className="p-5">
-      <div className="flex flex-row items-stretch gap-4 sm:gap-8">
+      <div className="flex flex-row items-start gap-4 sm:gap-8">
 
         {/* Avatar */}
-        <div className="relative shrink-0">
-          <div className="rounded-lg w-20 sm:w-50 aspect-square overflow-hidden shadow-sm">
+        <div className="shrink-0 mt-2 sm:mt-0">
+          <div className="relative rounded-lg w-24 h-24 sm:w-50 sm:h-50 overflow-hidden shadow-sm bg-zinc-900">
             <img
               src="photos/profile-tristan.png"
               alt="Tristan Labjata"
               className="w-full h-full object-cover object-top block"
             />
           </div>
-          <span className="absolute -bottom-1 -right-1 w-3 h-3 sm:w-3.5 sm:h-3.5 rounded-full bg-emerald-400 border-2 border-white" />
         </div>
 
         {/* Info */}
