@@ -11,11 +11,11 @@ export default function Hero() {
 
   return (
     <Card className="p-5">
-      <div className="flex flex-row items-start gap-4 sm:gap-8">
+      <div className="flex flex-row items-stretch gap-4 sm:gap-8">
 
         {/* Avatar */}
         <div className="relative shrink-0">
-          <div className="rounded-lg w-20 h-20 sm:w-50 sm:h-50 overflow-hidden shadow-sm">
+          <div className="rounded-lg w-20 sm:w-50 aspect-square overflow-hidden shadow-sm">
             <img
               src="photos/profile-tristan.png"
               alt="Tristan Labjata"
@@ -34,29 +34,42 @@ export default function Hero() {
               Tristan Labjata
             </h1>
             {mounted && (
-              <button
-                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                aria-label="Toggle dark mode"
-                className={`relative w-8 h-4 sm:w-11 sm:h-6 rounded-full transition-colors duration-300 focus:outline-none shrink-0 ${
-                  theme === "dark" ? "bg-zinc-700" : "bg-zinc-200"
-                }`}
-              >
-                <span
-                  className={`absolute top-0.5 left-0.5 w-3 h-3 sm:w-5 sm:h-5 rounded-full bg-white shadow transition-transform duration-300 flex items-center justify-center ${
-                    theme === "dark" ? "translate-x-4 sm:translate-x-5" : "translate-x-0"
-                  }`}
+              <div className="relative group">
+                <button
+                  onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                  aria-label="Toggle dark mode"
+                  className={`relative w-14 h-7 sm:w-16 sm:h-8 rounded-full focus:outline-none
+                    transition-all duration-300 active:scale-95 animate-pulse-once shrink-0
+                    ${ theme === "dark"
+                      ? "bg-indigo-600 shadow-[0_0_14px_4px_rgba(99,102,241,0.5)]"
+                      : "bg-zinc-400 shadow-[0_0_14px_4px_rgba(113,113,122,0.4)]"
+                    }`}
                 >
-                  {theme === "dark" ? (
-                    <svg width="7" height="7" viewBox="0 0 24 24" fill="none" stroke="#71717a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-                    </svg>
-                  ) : (
-                    <svg width="7" height="7" viewBox="0 0 24 24" fill="none" stroke="#71717a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-                    </svg>
-                  )}
+                  <span
+                    className={`absolute top-1 w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-white shadow-md
+                      flex items-center justify-center
+                      transition-all duration-300
+                      ${ theme === "dark" ? "left-[calc(100%-1.5rem)] sm:left-[calc(100%-1.75rem)]" : "left-1" }`}
+                  >
+                    {theme === "dark" ? (
+                      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#6366f1" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                      </svg>
+                    ) : (
+                      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#71717a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                      </svg>
+                    )}
+                  </span>
+                </button>
+                {/* Tooltip */}
+                <span className="pointer-events-none absolute -bottom-8 left-1/2 -translate-x-1/2
+                  text-[10px] font-medium text-zinc-500 dark:text-zinc-400 bg-white dark:bg-zinc-800
+                  border border-zinc-200 dark:border-zinc-700 px-2 py-0.5 rounded-md whitespace-nowrap
+                  opacity-0 group-hover:opacity-100 transition-opacity duration-200 shadow-sm z-10">
+                  {theme === "dark" ? "Switch to light" : "Switch to dark"}
                 </span>
-              </button>
+              </div>
             )}
           </div>
 
