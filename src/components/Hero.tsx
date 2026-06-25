@@ -17,7 +17,7 @@ export default function Hero() {
         <div className="shrink-0 mt-2 sm:mt-0">
           <div className="relative rounded-lg w-24 h-24 sm:w-50 sm:h-50 overflow-hidden shadow-sm bg-zinc-900">
             <img
-              src="photos/profile-tristan.png"
+              src="photos/LabjataTristanGrad.jpeg"
               alt="Tristan Labjata"
               className="w-full h-full object-cover object-top block"
             />
@@ -81,7 +81,7 @@ export default function Hero() {
 
           {/* Role */}
           <p className="text-[10px] sm:text-lg font-normal text-zinc-700 dark:text-zinc-300 leading-tight">
-            Backend Developer · Full-stack Developer · UI/UX
+            Backend Developer · Full-stack Developer 
           </p>
 
           {/* Buttons */}

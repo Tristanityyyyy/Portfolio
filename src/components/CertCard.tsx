@@ -1,11 +1,13 @@
 // src/components/CertCard.tsx
 "use client";
 import Card from "@/components/ui/Card";
+import Link from "next/link";
 
-const certifications = [
-  { title: "Java Fundamentals 1", issuer: "Oracle Academy", pdf: "/certifications/SystemAdCertificate.pdf" },
-  { title: "Java Fundamentals 2", issuer: "Oracle Academy", pdf: "/certifications/JavaCertificate1.pdf" },
-  { title: "Systems Administration and Maintenance", issuer: "STI College Balagtas", pdf: "/certifications/JavaCertificate2.pdf" }
+const featuredCertifications = [
+  { title: "Claude 101", issuer: "Anthropic", pdf: "/certifications/Claude101.pdf" },
+  { title: "Claude Code 101", issuer: "Anthropic", pdf: "/certifications/ClaudeCode101.pdf" },
+  { title: "Java Fundamentals 1", issuer: "Oracle Academy", pdf: "/certifications/JavaCertificate1.pdf" },
+  { title: "Java Fundamentals 2", issuer: "Oracle Academy", pdf: "/certifications/JavaCertificate2.pdf" }
 ];
 
 export default function CertCard() {
@@ -13,13 +15,13 @@ export default function CertCard() {
     <Card className="p-5 h-full">
       <div className="flex items-center justify-between gap-2">
         <h2 className="text-lg font-bold text-zinc-900 dark:text-zinc-100 whitespace-nowrap">Recent Certifications</h2>
-        <button className="text-xs text-zinc-400 hover:text-zinc-200 dark:text-zinc-500 dark:hover:text-zinc-300 flex items-center gap-1 shrink-0">
+        <Link href="/certifications" className="text-xs text-zinc-400 hover:text-zinc-200 dark:text-zinc-500 dark:hover:text-zinc-300 flex items-center gap-1 shrink-0">
           View All →
-        </button>
+        </Link>
       </div>
 
       <div className="flex flex-col gap-2 mt-4">
-        {certifications.map((cert, i) => (
+        {featuredCertifications.map((cert, i) => (
           <a
             key={i}
             href={cert.pdf}

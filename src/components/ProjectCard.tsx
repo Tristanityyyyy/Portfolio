@@ -1,5 +1,6 @@
 // src/components/ProjectCard.tsx
 import Card from "@/components/ui/Card";
+import Link from "next/link";
 
 interface Project {
   title: string;
@@ -21,9 +22,9 @@ export default function ProjectCard() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <h2 className="text-lg font-bold text-zinc-900 dark:text-zinc-100">Recent Projects</h2>
-        <a href="/projects" className="text-xs text-zinc-400 hover:text-zinc-200 dark:text-zinc-500 dark:hover:text-zinc-300 flex items-center gap-1">
+        <Link href="/projects" className="text-xs text-zinc-400 hover:text-zinc-200 dark:text-zinc-500 dark:hover:text-zinc-300 flex items-center gap-1">
           View All →
-        </a>
+        </Link>
       </div>
 
       {/* 2-column grid */}

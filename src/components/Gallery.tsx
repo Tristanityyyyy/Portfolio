@@ -5,12 +5,10 @@ import { createPortal } from "react-dom";
 import Card from "@/components/ui/Card";
 
 const images = [
-  
+  { src: "photos/LabjataTristanGrad2.jpeg", alt: "Event photo 6" }, 
+  { src: "photos/LabjataTristanGrad3.jpeg", alt: "Event photo 6" },
   { src: "photos/capstone.jpg", alt: "Event photo 6" }, 
-  { src: "photos/banda.jpg", alt: "Event photo 6" },
   { src: "photos/photo4.jpg", alt: "Event photo 4" },
-  { src: "photos/awardbanda2.jpg", alt: "Event photo 6" },
-  { src: "photos/awardbanda.jpg", alt: "Event photo 1" },
   { src: "photos/photo7.jpg", alt: "Event photo 2" },
   { src: "photos/photo5.jpg", alt: "Event photo 4" },
   { src: "photos/photo3.jpg", alt: "Event photo 4" }, 
