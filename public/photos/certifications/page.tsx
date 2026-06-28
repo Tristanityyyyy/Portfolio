@@ -1,10 +1,13 @@
 import Link from "next/link";
 
 const allCertifications = [
-  { title: "Claude 101", issuer: "Anthropic", pdf: "/certifications/Claude101.pdf" },
+  { title: "ASP.NET Basics", issuer: "CodeCred", pdf: "https://www.codecred.dev/verify/0866429a-779b-4010-bc0b-d8d1c66b9e7c" },
+  { title: "Node.js Fundamentals", issuer: "CodeCred", pdf: "https://www.codecred.dev/verify/375e8636-b7fd-48d5-b83d-01688b979eb9" },
+  { title: "SQL Fundamentals", issuer: "CodeCred", pdf: "https://www.codecred.dev/verify/59decbbc-a932-4b7f-9817-51b2ceede704" },
+  { title: "Claude 101", issuer: "Anthropic", pdf: "https://verify.skilljar.com/c/fwbj6w5k33cz" },
+  { title: "Claude Code 101", issuer: "Anthropic", pdf: "https://verify.skilljar.com/c/4g3dgwbgyw9t" },
   { title: "Java Fundamentals 1", issuer: "Oracle Academy", pdf: "/certifications/JavaCertificate1.pdf" },
   { title: "Java Fundamentals 2", issuer: "Oracle Academy", pdf: "/certifications/JavaCertificate2.pdf" },
-  { title: "Claude Code 101", issuer: "Anthropic", pdf: "/certifications/ClaudeCode101.pdf" },
   { title: "Systems Administration and Maintenance", issuer: "STI College Balagtas", pdf: "/certifications/SystemsAdminCertificate.pdf" }
 ];
 

@@ -4,8 +4,8 @@ import Card from "@/components/ui/Card";
 import Link from "next/link";
 
 const featuredCertifications = [
-  { title: "Claude 101", issuer: "Anthropic", pdf: "/certifications/Claude101.pdf" },
-  { title: "Claude Code 101", issuer: "Anthropic", pdf: "/certifications/ClaudeCode101.pdf" },
+  { title: "Node.js Fundamentals", issuer: "CodeCred", pdf: "https://www.codecred.dev/verify/375e8636-b7fd-48d5-b83d-01688b979eb9" },
+  { title: "SQL Fundamentals", issuer: "CodeCred", pdf: "https://www.codecred.dev/verify/59decbbc-a932-4b7f-9817-51b2ceede704" },
   { title: "Java Fundamentals 1", issuer: "Oracle Academy", pdf: "/certifications/JavaCertificate1.pdf" },
   { title: "Java Fundamentals 2", issuer: "Oracle Academy", pdf: "/certifications/JavaCertificate2.pdf" }
 ];
