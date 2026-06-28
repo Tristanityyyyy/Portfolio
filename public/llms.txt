@@ -1,0 +1,27 @@
+# Tristan Labjata
+
+> Backend & Full-Stack Developer based in Quezon City, Philippines.
+> Specializing in C# and .NET, scalable APIs, and AI-integrated backend systems.
+
+## Links
+- Portfolio: https://tristanlabjata.vercel.app
+- GitHub: https://github.com/Tristanityyyyy
+- LinkedIn: https://linkedin.com/in/tristan-labjata-423657405
+- Email: labjatatristan@gmail.com
+
+## Skills
+C#, .NET, Node.js, PHP, MySQL, React, Next.js, JavaScript, Tailwind CSS, Git
+
+## Projects
+- Task Management App: React + Node.js task manager hosted on AWS EC2
+- AOPC Content Management System: CMS for the AOPC organization
+- Teacher's Report Management System: Generates and manages teacher reports
+- Web Scraper Extension: Built with Next.js
+
+## Experience
+- Full-Stack Developer Intern — Odecci Solutions Inc. (2026)
+- Backend Developer Intern — Odecci Solutions Inc. (2026)
+- Backend Developer — Capstone Project (2025)
+
+## Education
+- BS Information Technology — STI College Balagtas (2022)
